@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+</head>
+
+<body>
+	<h1>Utkarsh's Machine Learning Model to Predict Salary</h1>
+
+
+    <form action="/predict" method="post">
+    	<input type="text" name="experience" placeholder="Experience" required="required" />
+        <input type="text" name="test_score" placeholder="Test Score" required="required" />
+		<input type="text" name="interview_score" placeholder="Interview Score" required="required" />
+        <button type="submit" >Predict</button>
+    </form>
+p
+   <br>
+   <br>
+   {{ prediction_text }}
+</body>
+</html>
